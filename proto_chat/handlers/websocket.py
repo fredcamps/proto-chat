@@ -20,7 +20,8 @@ class WebsocketHandler(tornado.websocket.WebSocketHandler):
     def open(self, msg_type, src, dest, *args, **kwargs):
         '''Open socket event,
            must be called ACL rules or priority rules here'''
-        print("Opening websocket")
+        message = "Opening websocket"
+        print(message)
         self.connections.add(self)
         self.message_type = msg_type
         self.src = src
