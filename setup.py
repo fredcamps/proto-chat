@@ -21,10 +21,8 @@ tests_require = [
     'flake8',
     'pydocstyle',
     'pylint',
-    'pytest-pep8',
+    'pytest-pycodestyle',
     'pytest-cov',
-    # for pytest-runner to work, it is important that pytest comes last in
-    # this list: https://github.com/pytest-dev/pytest-runner/issues/11
     'pytest'
 ]
 
@@ -43,13 +41,10 @@ setup(name='proto chat',
           'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
           'Natural Language :: English',
           'Programming Language :: Python :: 3',
-          'Programming Language :: Python :: 3.5',
-          'Programming Language :: Python :: 3.6',
-          'Programming Language :: Python :: 3.7',
           'Programming Language :: Python :: 3.8',
       ],
       include_package_data=True,
-      packages=find_packages(include=['proto_chat*']),
+      packages=['proto_chat'],
       test_suite='tests',
       setup_requires=['pytest-runner'],
       tests_require=tests_require)
