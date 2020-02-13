@@ -10,6 +10,7 @@ dist
 *.mo
 
 # Testing
+.coverage
 .tox
 
 # Vagrant
