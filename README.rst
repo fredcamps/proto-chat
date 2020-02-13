@@ -4,11 +4,12 @@ proto chat
 Just a dummy chat
 
 # For run project...
-```
-pip install --user pipenv
-pipenv install
-pipenv run runserver
-```
+
+``pip install --user pipenv``
+
+``pipenv install``
+
+``pipenv run runserver``
 
 Credits
 -------
