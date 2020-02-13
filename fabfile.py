@@ -33,4 +33,4 @@ def clean():
 @task
 def devserver(port=8888, logging='error'):
     """Start the server in development mode."""
-    run('python3 run.py --port=%s --logging=%s' % (port, logging))
+    run('python3 app.py --port=%s --logging=%s' % (port, logging))

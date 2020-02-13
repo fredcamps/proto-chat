@@ -2,6 +2,6 @@ version: '3.7'
 services:
   proto_chat:
     build: .
-    command: python /app/run.py
+    command: python /app/app.py
     ports:
       - "8000:8000"

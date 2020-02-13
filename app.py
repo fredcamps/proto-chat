@@ -7,8 +7,8 @@ import tornado.autoreload
 import tornado.web
 from tornado.options import options
 
-from settings import settings
 from proto_chat.urls import url_patterns
+from settings import settings
 
 
 class TornadoApplication(tornado.web.Application):
